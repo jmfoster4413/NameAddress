@@ -1,1 +1,1 @@
-Monday - 2/29  Bootstrap Pluralsight
+Friday - 2/26/16  Add State table to Data directory  Add Save button  Add service to retrieve State list  Change State text box to a drop downMonday - 2/29  Bootstrap Pluralsight
