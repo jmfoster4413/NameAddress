@@ -6,7 +6,15 @@ angular.module('myApp', [
   'myApp.view1',
   'myApp.view2',
   'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+])
+//config(['$routeProvider', function($routeProvider) {
+//  $routeProvider.otherwise({redirectTo: '/view1'});
+//}]);
+.config(['$routeProvider', function($routeProvider) {
+  console.log("in Route provider");
+  $routeProvider.when('/view1', {
+    templateUrl: 'view1/view1.html',
+    controller: 'View1Ctrl'
+  })
+      $routeProvider.otherwise({redirectTo: '/view2'});
 }]);

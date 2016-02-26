@@ -2,5 +2,14 @@
 <div>Name: <input type="text" name="name"></div>
 <div>Address: <input type="text" name="address"></div>
 <div>City: <input type="text" name="city"></div>
-<div>State: <input type="text" name="state"></div>
+<!-- Select Basic -->
+<div class="form-group" ng-cloak>
+    <label>State:</label>
+    <div>
+        <label>State:</label>
+        <select id="stateId" name="stateId" ng-model="selectedState" ng-options="state.name for state in states">
+        </select>
+
+    </div>
+</div>
 <div>Zip: <input type="text" name="zipCode"></div>
