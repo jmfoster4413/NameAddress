@@ -1,14 +1,37 @@
 <p>This is the partial for view 1.</p>
-<div>Name: <input type="text" name="name"></div>
-<div>Address: <input type="text" name="address"></div>
-<div>City: <input type="text" name="city"></div>
-<!-- Select Basic -->
-<div class="form-group" ng-cloak>
+<div class="container">
     <div>
-        <label>State:</label>
-        <select id="stateId" name="stateId" ng-model="selectedState" ng-options="state.name for state in theseStates">
-        </select>
-
+        <div class="row">
+            <div class="form-group col-lg-1">
+                <label for="name-input">Name:</label>
+                <input id="name-input" class="form-control " type="text" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-1">
+                <label for="address-input">Address:</label>
+                <input id="address-input" class="form-control" type="text" name="address">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-1">
+                <label for="city-input">City:</label>
+                <input id="city-input" class="form-control" type="text" name="city">
+            </div>
+        </div>
+        <div class="form-group" ng-cloak>
+            <div>
+                <label>State:</label>
+                <select id="stateId" name="stateId" ng-model="selectedState"
+                        ng-options="state.id for state in theseStates">
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-1">
+                <label for="zip-input">Zip:</label>
+                <input id="zip-input" class="form-control" type="text" name="zipCode">
+            </div>
+        </div>
     </div>
 </div>
-<div>Zip: <input type="text" name="zipCode"></div>
