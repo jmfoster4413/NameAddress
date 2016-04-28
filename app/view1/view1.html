@@ -4,34 +4,23 @@
         <div class="row">
             <div class="form-group col-lg-1">
                 <label for="name-input">Name:</label>
-                <input id="name-input" class="form-control " type="text" name="name">
+                <input id="name-input" class="form-control " type="text" placeholder="Name" name="name">
             </div>
         </div>
         <div class="row">
             <div class="form-group col-lg-1">
                 <label for="address-input">Address:</label>
-                <input id="address-input" class="form-control" type="text" name="address">
+                <input id="address-input" class="form-control" type="text" placeholder="Address" name="address">
             </div>
         </div>
-        <div class="row">
-            <div class="form-group col-lg-1">
-                <label for="city-input">City:</label>
-                <input id="city-input" class="form-control" type="text" name="city">
-            </div>
-        </div>
-        <div class="form-group" ng-cloak>
-            <div>
-                <label>State:</label>
-                <select id="stateId" name="stateId" ng-model="selectedState"
+
+            <div class="form-group">
+                <input id="city-input" class="col-xs-6" type="text" placeholder="City" name="city">
+                <select id="stateId" class="col-xs-3" name="stateId" ng-model="selectedState"
                         ng-options="state.id for state in theseStates">
                 </select>
+                <input id="zip-input" class="col-xs-3" type="text" name="zipCode" placeholder="Zip">
             </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-lg-1">
-                <label for="zip-input">Zip:</label>
-                <input id="zip-input" class="form-control" type="text" name="zipCode">
-            </div>
-        </div>
+
     </div>
 </div>
